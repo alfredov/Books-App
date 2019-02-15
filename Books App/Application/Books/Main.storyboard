@@ -126,10 +126,14 @@
                     <navigationItem key="navigationItem" title="Books" id="5Ue-zm-X4e">
                         <barButtonItem key="rightBarButtonItem" title="Add" style="done" id="fgj-tu-aFm">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="gotoAddForm:" destination="EVV-uA-k5j" id="7uE-ah-gtb"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="6f9-O2-Tos" id="Vn3-HZ-QWh"/>
+                        <segue destination="UWV-C0-hmK" kind="show" identifier="toAddView" id="TKm-LB-2x0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Hs-L3-FeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,6 +158,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okW-ZM-jPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-31.199999999999999" y="65.217391304347828"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="7ya-kp-zw7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Add" id="UWV-C0-hmK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3j-YL-Jqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="65"/>
         </scene>
     </scenes>
     <resources>

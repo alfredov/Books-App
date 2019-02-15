@@ -19,6 +19,9 @@
 		385BA5822216F9880080B263 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385BA5812216F9880080B263 /* Colors.xcassets */; };
 		38895D062216FF0C001BF80B /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38895D052216FF0C001BF80B /* BooksViewController.swift */; };
 		38895D0822170F5F001BF80B /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38895D0722170F5F001BF80B /* BookCollectionViewCell.swift */; };
+		3889AD0D22173D3400FC0716 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3889AD0C22173D3400FC0716 /* Add.storyboard */; };
+		3889AD0F22173D8E00FC0716 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889AD0E22173D8E00FC0716 /* AddViewController.swift */; };
+		3889AD1122173DB500FC0716 /* AddBooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889AD1022173DB500FC0716 /* AddBooksViewModel.swift */; };
 		C5A88CE669F84A9AD9B02933 /* Pods_Books_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5BA24E1288E00A2B56513B /* Pods_Books_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		385BA5812216F9880080B263 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		38895D052216FF0C001BF80B /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		38895D0722170F5F001BF80B /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		3889AD0C22173D3400FC0716 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Add.storyboard; path = "Books App/Application/Add/Add.storyboard"; sourceTree = SOURCE_ROOT; };
+		3889AD0E22173D8E00FC0716 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		3889AD1022173DB500FC0716 /* AddBooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBooksViewModel.swift; sourceTree = "<group>"; };
 		C4FB3F7950B01DBE37C8ACD9 /* Pods-Books App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Books App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Books App/Pods-Books App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +175,9 @@
 		385BA57F2216F83D0080B263 /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				3889AD0C22173D3400FC0716 /* Add.storyboard */,
+				3889AD0E22173D8E00FC0716 /* AddViewController.swift */,
+				3889AD1022173DB500FC0716 /* AddBooksViewModel.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -263,6 +272,7 @@
 				385BA5822216F9880080B263 /* Colors.xcassets in Resources */,
 				385BA57C2216F3B10080B263 /* Main.storyboard in Resources */,
 				385BA5722216F1630080B263 /* README.md in Resources */,
+				3889AD0D22173D3400FC0716 /* Add.storyboard in Resources */,
 				38217F7A221713D100DD9BA4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +344,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				38217F7F221715F900DD9BA4 /* Book.swift in Sources */,
+				3889AD1122173DB500FC0716 /* AddBooksViewModel.swift in Sources */,
 				38895D0822170F5F001BF80B /* BookCollectionViewCell.swift in Sources */,
+				3889AD0F22173D8E00FC0716 /* AddViewController.swift in Sources */,
 				38217F81221719D800DD9BA4 /* BooksViewModel.swift in Sources */,
 				385BA5602216F1430080B263 /* AppDelegate.swift in Sources */,
 				38895D062216FF0C001BF80B /* BooksViewController.swift in Sources */,
