@@ -8,7 +8,7 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-
+#include "Pods/Target Support Files/Pods-Books App/Pods-Books App.debug.xcconfig"
 
 IS_APP_NAME = Books App
 IS_APP_VERSION = 1
