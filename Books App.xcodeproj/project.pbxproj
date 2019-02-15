@@ -73,6 +73,8 @@
 		38217F7D221714F300DD9BA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				38895D052216FF0C001BF80B /* BooksViewController.swift */,
+				38895D0722170F5F001BF80B /* BookCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,8 +162,6 @@
 				38217F7C221714E700DD9BA4 /* ModelViewModel */,
 				38217F7B221714BE00DD9BA4 /* Model */,
 				385BA57B2216F3B10080B263 /* Main.storyboard */,
-				38895D052216FF0C001BF80B /* BooksViewController.swift */,
-				38895D0722170F5F001BF80B /* BookCollectionViewCell.swift */,
 			);
 			path = Books;
 			sourceTree = "<group>";

@@ -88,6 +88,7 @@
                                                         </constraints>
                                                         <size key="customSize" width="200" height="260"/>
                                                         <connections>
+                                                            <outlet property="bookImageView" destination="Y6l-td-0B2" id="uNz-ZQ-i52"/>
                                                             <outlet property="titleLabel" destination="Cfy-n2-4uT" id="jt8-eQ-I16"/>
                                                         </connections>
                                                     </collectionViewCell>

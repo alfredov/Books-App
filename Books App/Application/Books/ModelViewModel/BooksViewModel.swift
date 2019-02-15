@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseFirestore
+import Firebase
 
 protocol BooksViewModelDelegate {
     func reloadData()
@@ -17,6 +18,7 @@ class BooksViewModel {
     private var items: [Book] = []
     
     private var db: Firestore {
+        FirebaseApp.configure()
         let db = Firestore.firestore()
         let settings = db.settings
         settings.isPersistenceEnabled = true
@@ -46,13 +48,11 @@ class BooksViewModel {
             try? snapshot?.documents.forEach({ (snapshot) in
                 let json = snapshot.data()
                 let jsonData = try JSONSerialization.data(withJSONObject: json, options: [])
-                
-                guard let transaction = try? JSONDecoder().decode(Book.self, from: jsonData) else {
+                guard let book = try? JSONDecoder().decode(Book.self, from: jsonData) else {
                     return
                 }
-                
-                transaction.firebaseId = snapshot.documentID
-                self.items.append(transaction)
+                book.firebaseId = snapshot.documentID
+                self.items.append(book)
             })
             
             self.delegate?.reloadData()
@@ -76,10 +76,11 @@ class BookViewModel {
     }
     
     var createdAt: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MM-yyyy"
-        formatter.timeZone = TimeZone.current
-        return formatter.string(from: book.createdAt)
+        return book.createdAt
+    }
+    
+    var uuid: String {
+        return book.uuid
     }
     
     init(book: Book) {

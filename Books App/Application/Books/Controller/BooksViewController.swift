@@ -11,10 +11,13 @@ import UIKit
 class BooksViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
+    private var viewModel = BooksViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        viewModel.delegate = self
     }
     
 
@@ -32,13 +35,22 @@ class BooksViewController: UIViewController {
 
 extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return viewModel.numberOfitems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BookCollectionViewCell
-        cell.titleLabel.text = "100 dias sobre el mundo"
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? BookCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        cell.viewModel = viewModel.item(at: indexPath)
         return cell
     }
     
+}
+
+extension BooksViewController: BooksViewModelDelegate {
+    func reloadData() {
+        collectionView.reloadData()
+    }
 }

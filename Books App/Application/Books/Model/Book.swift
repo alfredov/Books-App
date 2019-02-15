@@ -10,9 +10,9 @@ import Foundation
 
 class Book: Codable {
     var firebaseId: String?
-    var uuid = UUID()
+    var uuid: String
     var title: String
-    var createdAt: Date
+    var createdAt: String
     var authors: [String]
     
     enum CodingKeys: String, CodingKey {
@@ -22,18 +22,19 @@ class Book: Codable {
         case authors
     }
     
-    init(title: String, createdAt: Date, authors: [String]) {
+    init(title: String, createdAt: String, authors: [String], uuid: String) {
         self.title = title
         self.createdAt = createdAt
         self.authors = authors
+        self.uuid = uuid
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        uuid = try container.decode(UUID.self, forKey: .uuid)
+        uuid = try container.decode(String.self, forKey: .uuid)
         title = try container.decode(String.self, forKey: .title)
-        createdAt = try container.decode(Date.self, forKey: .createdAt)
+        createdAt = try container.decode(String.self, forKey: .createdAt)
         authors = try container.decode([String].self, forKey: .authors)
     }
     
@@ -48,15 +49,5 @@ class Book: Codable {
         }
         
         return json
-    }
-}
-
-extension Book: Hashable {
-    public static func == (lhs: Book, rhs: Book) -> Bool {
-        return lhs.uuid == rhs.uuid
-    }
-    
-    public var hashValue: Int {
-        return uuid.hashValue
     }
 }
