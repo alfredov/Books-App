@@ -88,7 +88,6 @@
 		385BA5532216F1430080B263 = {
 			isa = PBXGroup;
 			children = (
-				385BA57E2216F47C0080B263 /* Development.xcconfig */,
 				385BA5732216F2870080B263 /* .gitignore */,
 				385BA5712216F1630080B263 /* README.md */,
 				385BA55E2216F1430080B263 /* Books App */,
@@ -146,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				385BA55F2216F1430080B263 /* AppDelegate.swift */,
+				385BA57E2216F47C0080B263 /* Development.xcconfig */,
 				385BA5682216F1440080B263 /* LaunchScreen.storyboard */,
 				385BA56B2216F1440080B263 /* Info.plist */,
 				38217F79221713D100DD9BA4 /* GoogleService-Info.plist */,

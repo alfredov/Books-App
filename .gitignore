@@ -81,9 +81,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-# Google service client config
-GoogleService-Info.plist
-
 Release.xcconfig
 Staging.xcconfig
-Development.xcconfig
