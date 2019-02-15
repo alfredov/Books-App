@@ -1,5 +1,7 @@
 # Books App
-An iOS App to manage books
+
+<img width="200" alt="screen shot 2019-02-15 at 5 44 25 pm" src="https://user-images.githubusercontent.com/4967157/52886083-8c6f7880-3149-11e9-8c7d-128129a7ffbc.png">
+<img width="200" alt="screen shot 2019-02-15 at 5 45 09 pm" src="https://user-images.githubusercontent.com/4967157/52886183-e07a5d00-3149-11e9-8faa-f438231ce00b.png">
 
 ## How to run on your Mac
 1. You should get installed `pod`. (Skip this step if you already have installed it)
