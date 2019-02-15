@@ -11,6 +11,8 @@ import UIKit
 class BookCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bookImageView: UIImageView!
+    @IBOutlet weak var createdAt: UILabel!
+    
     
     var viewModel: BookViewModel! {
         didSet {
@@ -21,5 +23,6 @@ class BookCollectionViewCell: UICollectionViewCell {
     func setUpView() {
         titleLabel.text = viewModel.title
         bookImageView.image = UIImage(named: "book\(viewModel.uuid)")
+        createdAt.text = viewModel.createdAt
     }
 }
