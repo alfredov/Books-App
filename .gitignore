@@ -86,3 +86,4 @@ GoogleService-Info.plist
 
 Release.xcconfig
 Staging.xcconfig
+Development.xcconfig
