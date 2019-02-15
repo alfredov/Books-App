@@ -85,5 +85,4 @@ iOSInjectionProject/
 GoogleService-Info.plist
 
 Release.xcconfig
-Development.xcconfig
 Staging.xcconfig

@@ -8,24 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		385BA5602216F1430080B263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385BA55F2216F1430080B263 /* AppDelegate.swift */; };
-		385BA5622216F1430080B263 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385BA5612216F1430080B263 /* ViewController.swift */; };
-		385BA5652216F1430080B263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385BA5632216F1430080B263 /* Main.storyboard */; };
 		385BA5672216F1440080B263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385BA5662216F1440080B263 /* Assets.xcassets */; };
 		385BA56A2216F1440080B263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385BA5682216F1440080B263 /* LaunchScreen.storyboard */; };
 		385BA5722216F1630080B263 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 385BA5712216F1630080B263 /* README.md */; };
 		385BA5742216F2870080B263 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 385BA5732216F2870080B263 /* .gitignore */; };
+		385BA57C2216F3B10080B263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385BA57B2216F3B10080B263 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		385BA55C2216F1430080B263 /* Books App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Books App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		385BA55F2216F1430080B263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		385BA5612216F1430080B263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		385BA5642216F1430080B263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		385BA5662216F1440080B263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385BA5692216F1440080B263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385BA56B2216F1440080B263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385BA5712216F1630080B263 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		385BA5732216F2870080B263 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		385BA57B2216F3B10080B263 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		385BA57E2216F47C0080B263 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +41,7 @@
 		385BA5532216F1430080B263 = {
 			isa = PBXGroup;
 			children = (
+				385BA57E2216F47C0080B263 /* Development.xcconfig */,
 				385BA5732216F2870080B263 /* .gitignore */,
 				385BA5712216F1630080B263 /* README.md */,
 				385BA55E2216F1430080B263 /* Books App */,
@@ -60,14 +60,61 @@
 		385BA55E2216F1430080B263 /* Books App */ = {
 			isa = PBXGroup;
 			children = (
+				385BA5782216F3360080B263 /* Base */,
+				385BA5772216F32C0080B263 /* Application */,
+				385BA5762216F3220080B263 /* Resources */,
+				385BA5752216F2F80080B263 /* Config */,
+			);
+			path = "Books App";
+			sourceTree = "<group>";
+		};
+		385BA5752216F2F80080B263 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		385BA5762216F3220080B263 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				385BA5792216F3850080B263 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		385BA5772216F32C0080B263 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				385BA57A2216F3980080B263 /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		385BA5782216F3360080B263 /* Base */ = {
+			isa = PBXGroup;
+			children = (
 				385BA55F2216F1430080B263 /* AppDelegate.swift */,
-				385BA5612216F1430080B263 /* ViewController.swift */,
-				385BA5632216F1430080B263 /* Main.storyboard */,
-				385BA5662216F1440080B263 /* Assets.xcassets */,
 				385BA5682216F1440080B263 /* LaunchScreen.storyboard */,
 				385BA56B2216F1440080B263 /* Info.plist */,
 			);
-			path = "Books App";
+			path = Base;
+			sourceTree = "<group>";
+		};
+		385BA5792216F3850080B263 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				385BA5662216F1440080B263 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		385BA57A2216F3980080B263 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				385BA57B2216F3B10080B263 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +178,8 @@
 				385BA5742216F2870080B263 /* .gitignore in Resources */,
 				385BA56A2216F1440080B263 /* LaunchScreen.storyboard in Resources */,
 				385BA5672216F1440080B263 /* Assets.xcassets in Resources */,
+				385BA57C2216F3B10080B263 /* Main.storyboard in Resources */,
 				385BA5722216F1630080B263 /* README.md in Resources */,
-				385BA5652216F1430080B263 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385BA5622216F1430080B263 /* ViewController.swift in Sources */,
 				385BA5602216F1430080B263 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +197,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		385BA5632216F1430080B263 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				385BA5642216F1430080B263 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		385BA5682216F1440080B263 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -172,6 +210,7 @@
 /* Begin XCBuildConfiguration section */
 		385BA56C2216F1440080B263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385BA57E2216F47C0080B263 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -288,11 +327,12 @@
 		};
 		385BA56F2216F1440080B263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385BA57E2216F47C0080B263 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5E99QS6RV6;
-				INFOPLIST_FILE = "Books App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Books App/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5E99QS6RV6;
-				INFOPLIST_FILE = "Books App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Books App/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
